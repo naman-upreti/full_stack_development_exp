@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Admission Portal</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="form-container">
+        <div class="form-header">
+            <div class="logo-container">
+                <img src="https://cdn-icons-png.flaticon.com/512/3135/3135755.png" alt="Student Icon" class="logo">
+            </div>
+            <h2 class="form-title">Student Admission Portal</h2>
+            <p class="form-subtitle">Join our vibrant academic community</p>
+        </div>
+
+        <form id="admissionForm">
+            <div class="form-section">
+                <h3 class="section-title">Personal Information</h3>
+                <div class="form-group">
+                    <label for="fullName" class="form-label">Full Name</label>
+                    <input type="text" id="fullName" class="form-input" placeholder="Enter your full name">
+                    <p id="fullNameError" class="error-message"></p>
+                </div>
+
+                <div class="form-group">
+                    <label for="email" class="form-label">Email Address</label>
+                    <input type="email" id="email" class="form-input" placeholder="your.email@example.com">
+                    <p id="emailError" class="error-message"></p>
+                </div>
+
+                <div class="form-group">
+                    <label for="dateOfBirth" class="form-label">Date of Birth</label>
+                    <input type="date" id="dateOfBirth" class="form-input">
+                    <p id="dateOfBirthError" class="error-message"></p>
+                </div>
+            </div>
+
+            <div class="form-section">
+                <h3 class="section-title">Academic Preferences</h3>
+                <div class="form-group">
+                    <label for="course" class="form-label">Desired Program</label>
+                    <select id="course" class="form-select">
+                        <option value="">Select your program</option>
+                        <option value="computer_science">B.Tech - Computer Science</option>
+                        <option value="business_administration">BBA - Business Administration</option>
+                        <option value="electrical_engineering">B.Tech - Electrical Engineering</option>
+                        <option value="arts_humanities">BA - Arts & Humanities</option>
+                    </select>
+                    <p id="courseError" class="error-message"></p>
+                </div>
+            </div>
+
+            <div class="form-section">
+                <div class="checkbox-group">
+                    <input type="checkbox" id="terms" class="form-checkbox">
+                    <label for="terms" class="checkbox-label">
+                        I agree to the <a href="#">terms and conditions</a>
+                    </label>
+                    <p id="termsError" class="error-message"></p>
+                </div>
+            </div>
+
+            <div class="button-group">
+                <button type="submit" class="submit-button">Submit Application</button>
+                <button type="button" class="update-button hidden" id="updateButton">Update Details</button>
+            </div>
+        </form>
+
+        <div id="success-message" class="hidden">
+            <div class="success-content">
+                <span class="success-icon">🎓</span>
+                <h3>Application Submitted!</h3>
+                <p>Welcome to our academic community. We'll review your application and get back to you soon.</p>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
