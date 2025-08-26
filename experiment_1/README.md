@@ -1,25 +1,22 @@
-# 🎓 Student Admission Form – Full Stack Development Lab
+# 🎓 Student Admission Form – FSD Lab
 
 ## 📌 Overview
-This project is part of the **Full Stack Development Lab 
-The task was to **create a Student Admission Form** using **HTML, CSS, and JavaScript (DOM Manipulation & Validation)** and initialize **Git for version control**.
-
-The form collects student details such as:
-- Full Name  
-- Email Address  
-- Date of Birth  
-- Course Selection  
-- Terms & Conditions agreement  
-
-It validates inputs before submission and provides feedback to the user.
+A simple **Student Admission Form** built with **HTML, CSS, and JavaScript**.  
+Validates user input using **DOM manipulation** and shows success/error messages.  
 
 ---
 
 ## 🚀 Features
-- ✅ Responsive & clean form design using **HTML + CSS**  
-- ✅ Real-time **form validation** with JavaScript  
-- ✅ Error messages for invalid inputs  
-- ✅ Success message when form is submitted correctly  
-- ✅ Prevents submission until all fields are valid  
-- ✅ Resetting form after successful submission  
+- Responsive form design  
+- Validation for all fields (Name, Email, DOB, Course, Terms)  
+- Error messages for invalid input  
+- Success message + reset after submission  
+
 ---
+
+## 🌐 Live Demo
+👉 [full-stack-development-exp-zuak.vercel.app](https://full-stack-development-exp-zuak.vercel.app)  
+
+---
+
+## 📂 Files
